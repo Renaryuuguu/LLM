@@ -1,0 +1,17 @@
+.chat-box {
+  display: flex;
+  flex-direction: row !important;
+  gap: 0.5rem;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.user-avatar {
+  flex-shrink: 0;
+}
+
+.user-message {
+  background-color: lightblue;
+  line-height: 1.5rem;
+}
