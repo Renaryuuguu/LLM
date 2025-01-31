@@ -1,0 +1,31 @@
+{
+  "chats": [
+    {
+      "chat_id": "",
+      "chat_name": "",
+      "messages": [
+        [
+          {
+            "message_id": "",
+            "role": "user",
+            "content": [""],
+            "children": [
+              {
+                "message_id": "",
+                "role": "assistant",
+                "content": [""],
+                "children": []
+              },
+              {
+                "message_id": "",
+                "role": "assistant",
+                "content": [""],
+                "children": []
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

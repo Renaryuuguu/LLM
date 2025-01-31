@@ -8,6 +8,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
 import { markedHighlight } from "marked-highlight";
 import "github-markdown-css/github-markdown.css";
+import { useSelector } from "react-redux";
 
 const marked = new Marked();
 // markedHighlight({
@@ -54,9 +55,12 @@ const getContent = async (response) => {
   // return assistantMessage;
 };
 
-const ChatMessage = () => {
+const ChatMessage = ({ content, role }) => {
+  /*
   const [message, setMessage] = useState("");
   const [streamMessage, setStreamMessage] = useState("");
+  const chats = useSelector((state) => state["chat-store"].chats);
+  console.log(chats);
   const handleClick = async () => {
     console.log("click");
     let content = "你好，你的名字是？";
@@ -135,27 +139,37 @@ const ChatMessage = () => {
     // };
     // fetchStreamData();
   }, []);
+  */
   return (
-    <Space direction="vertical">
-      <Button type="primary" onClick={testStream}>
-        ChatMessage
-      </Button>
-      <div
-        className={"markdown-body"}
-        dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(marked.parse(streamMessage)),
-        }}
-      />
-      <Button type="primary" onClick={testNormal}>
-        ChatMessage
-      </Button>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(marked.parse(message)),
-        }}
-      />
-    </Space>
+    <div
+      className={"markdown-body"}
+      dangerouslySetInnerHTML={{
+        __html: DOMPurify.sanitize(marked.parse(content)),
+      }}
+    />
   );
+  // return (
+  //   <Space direction="vertical">
+  //     <Button type="primary" onClick={testStream}>
+  //       ChatMessage
+  //     </Button>
+  //     <div
+  //       className={"markdown-body"}
+  //       dangerouslySetInnerHTML={{
+  //         __html: DOMPurify.sanitize(marked.parse(streamMessage)),
+  //       }}
+  //     />
+  //     <Button type="primary" onClick={testNormal}>
+  //       ChatMessage
+  //     </Button>
+  //     <div
+  //       dangerouslySetInnerHTML={{
+  //         __html: DOMPurify.sanitize(marked.parse(message)),
+  //       }}
+  //     />
+  //     {/* {chats} */}
+  //   </Space>
+  // );
   // return (
   //   <>
   //     <div className={styles["chat-box"]}>
