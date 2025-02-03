@@ -5,7 +5,7 @@ import MessageList from "../components/message-list/message-list";
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: MessageList,
+    Component: ChatMessage,
   },
 ]);
 export default router;

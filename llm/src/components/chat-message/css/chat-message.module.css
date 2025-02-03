@@ -15,3 +15,20 @@
   background-color: lightblue;
   line-height: 1.5rem;
 }
+.markdown-body code {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  border-radius: 0 0 5px 5px;
+}
+.code-wrapper {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  /* height: 20px; */
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+}
+
+/* .hljs-title.function_ {
+  color: #5cb0ef;
+} */

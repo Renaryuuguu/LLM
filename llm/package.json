@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "@coze/api": "^1.0.17",
     "@reduxjs/toolkit": "^2.5.1",
+    "@wooorm/starry-night": "^3.6.0",
     "antd": "^5.23.1",
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
@@ -15,11 +17,14 @@
     "marked-highlight": "^2.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.3",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.4",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "rehype-highlight": "^7.0.1",
+    "remark-gfm": "^4.0.0"
   },
   "scripts": {
     "start": "craco start",
